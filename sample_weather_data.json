@@ -1,0 +1,32 @@
+[
+  {
+    "city": "Paris",
+    "temp": 18.5,
+    "humidity": 65,
+    "description": "partly cloudy"
+  },
+  {
+    "city": "Marseille", 
+    "temp": 24.2,
+    "humidity": 58,
+    "description": "sunny"
+  },
+  {
+    "city": "Lyon",
+    "temp": 20.1,
+    "humidity": 62,
+    "description": "clear sky"
+  },
+  {
+    "city": "Toulouse",
+    "temp": 22.3,
+    "humidity": 60,
+    "description": "scattered clouds"
+  },
+  {
+    "city": "Nice",
+    "temp": 23.8,
+    "humidity": 64,
+    "description": "clear sky"
+  }
+]

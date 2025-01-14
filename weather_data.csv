@@ -1,0 +1,11 @@
+city,temp,humidity,description
+Paris,18.5,65,partly cloudy
+Marseille,24.2,58,sunny
+Lyon,20.1,62,clear sky
+Toulouse,22.3,60,scattered clouds
+Nice,23.8,64,clear sky
+Paris,18.5,65,partly cloudy
+Marseille,,58,sunny
+Lyon,20.1,,clear sky
+Nice,35.8,64,clear sky
+Toulouse,12.3,60,scattered clouds
