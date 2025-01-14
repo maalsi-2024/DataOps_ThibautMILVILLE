@@ -1,58 +1,29 @@
-name: Shell commands
+name: Weather Data Analysis
 
-permissions:
-  contents: write
-
-on: [push]
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
-  run-shell-command:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-
+  analyze-weather:
+    runs-on: ubuntu-latest
+    
     steps:
-
-      - name: Check actor
-        run: |
-          if [ "${{ github.actor }}" = "github-actions[bot]" ]; then
-            echo "Workflow triggered by actions@github.com. Exiting..."
-            exit 1
-          fi
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v3
+      
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-
-      - name: Echo a string
-        run: echo "Hello World"
-
-      - name: Multiline script
-        run: |
-          echo "repo: " ${{github.repository}}
-          python3 -V
-
-      - name: Install dependencies
-        run: |
-          pip install pandas
-
-      - name: Run Python script
-        run: |
-          python3 biblio.py
-          ls -l
-      
-      - name: Run Python script
-        run: |
-          python3 parite.py
-      
-      - name: Write output file
-        run: |
-          mv magasin.csv ./output/output.csv
-          git config --local user.name "GitHub Actions Bot"
-          git config --local user.email "actions@github.com"
-          git add . && git commit -m "Write output/output.csv" && git push
+          python-version: '3.9'
+          
+      - name: Run Weather Analysis
+        run: python weather_analysis.py
+        env:
+          WEATHER_API_KEY: '669ed4dcefdbc7b7d4ff649f5a9ec2ef'
+          
+      - name: Upload Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: weather-report
+          path: weather-report.html
