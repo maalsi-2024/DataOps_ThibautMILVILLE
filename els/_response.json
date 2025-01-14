@@ -1,0 +1,309 @@
+{
+  "took": 56,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 1092,
+      "relation": "eq"
+    },
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "bitcoin-price",
+        "_id": "Pg_AiI0Bc9jUxdxFgTsB",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:45:33.713037800Z",
+          "@version": "1",
+          "tags": [
+            "binance-peg-dogecoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "binance-peg-dogecoin": {
+            "eur_24h_vol": 377595.77204138145,
+            "eur_market_cap": 0.0,
+            "eur": 0.074259,
+            "last_updated_at": 1707396079,
+            "eur_24h_change": 1.675562784508143
+          },
+          "event": {
+            "original": "{\"binance-peg-dogecoin\":{\"eur\":0.074259,\"eur_market_cap\":0.0,\"eur_24h_vol\":377595.77204138145,\"eur_24h_change\":1.675562784508143,\"last_updated_at\":1707396079}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=binance-peg-dogecoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "Pw_AiI0Bc9jUxdxFgTs5",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:45:33.775187300Z",
+          "bitcoin": {
+            "eur_24h_vol": 24360742298.716045,
+            "eur_market_cap": 815622160226.6355,
+            "eur": 41515,
+            "last_updated_at": 1707396021,
+            "eur_24h_change": 4.026099270119193
+          },
+          "@version": "1",
+          "tags": [
+            "bitcoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "event": {
+            "original": "{\"bitcoin\":{\"eur\":41515,\"eur_market_cap\":815622160226.6355,\"eur_24h_vol\":24360742298.716045,\"eur_24h_change\":4.026099270119193,\"last_updated_at\":1707396021}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "QA_AiI0Bc9jUxdxFgTt6",
+        "_score": 1.0,
+        "_source": {
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          },
+          "@timestamp": "2024-02-08T12:45:33.843299200Z",
+          "@version": "1",
+          "tags": [
+            "ethereum"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "ethereum": {
+            "eur_24h_vol": 10375866333.759274,
+            "eur_market_cap": 270179681237.76547,
+            "eur": 2249.42,
+            "last_updated_at": 1707396288,
+            "eur_24h_change": 2.2270946332650343
+          },
+          "event": {
+            "original": "{\"ethereum\":{\"eur\":2249.42,\"eur_market_cap\":270179681237.76547,\"eur_24h_vol\":10375866333.759274,\"eur_24h_change\":2.2270946332650343,\"last_updated_at\":1707396288}}"
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "QQ_AiI0Bc9jUxdxFgTuF",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:45:33.854385800Z",
+          "binancecoin": {
+            "eur_24h_vol": 917765842.235136,
+            "eur_market_cap": 45230436072.471565,
+            "eur": 293.85,
+            "last_updated_at": 1707395972,
+            "eur_24h_change": 4.50458038969967
+          },
+          "@version": "1",
+          "tags": [
+            "binancecoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "event": {
+            "original": "{\"binancecoin\":{\"eur\":293.85,\"eur_market_cap\":45230436072.471565,\"eur_24h_vol\":917765842.235136,\"eur_24h_change\":4.50458038969967,\"last_updated_at\":1707395972}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "PQ-_iI0Bc9jUxdxFlzsr",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:44:33.856271900Z",
+          "bitcoin": {
+            "eur_24h_vol": 24360742298.716045,
+            "eur_market_cap": 815622160226.6355,
+            "eur": 41515,
+            "last_updated_at": 1707396021,
+            "eur_24h_change": 4.026099270119193
+          },
+          "@version": "1",
+          "tags": [
+            "bitcoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "event": {
+            "original": "{\"bitcoin\":{\"eur\":41515,\"eur_market_cap\":815622160226.6355,\"eur_24h_vol\":24360742298.716045,\"eur_24h_change\":4.026099270119193,\"last_updated_at\":1707396021}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "OQ--iI0Bc9jUxdxFrTsF",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:43:33.915193300Z",
+          "binancecoin": {
+            "eur_24h_vol": 917765842.235136,
+            "eur_market_cap": 45230436072.471565,
+            "eur": 293.85,
+            "last_updated_at": 1707395972,
+            "eur_24h_change": 4.50458038969967
+          },
+          "@version": "1",
+          "tags": [
+            "binancecoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "event": {
+            "original": "{\"binancecoin\":{\"eur\":293.85,\"eur_market_cap\":45230436072.471565,\"eur_24h_vol\":917765842.235136,\"eur_24h_change\":4.50458038969967,\"last_updated_at\":1707395972}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "Og-_iI0Bc9jUxdxFljus",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:44:33.691874200Z",
+          "@version": "1",
+          "tags": [
+            "binance-peg-dogecoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "binance-peg-dogecoin": {
+            "eur_24h_vol": 377399.37488817656,
+            "eur_market_cap": 0.0,
+            "eur": 0.07434,
+            "last_updated_at": 1707395725,
+            "eur_24h_change": 1.967744278806767
+          },
+          "event": {
+            "original": "{\"binance-peg-dogecoin\":{\"eur\":0.07434,\"eur_market_cap\":0.0,\"eur_24h_vol\":377399.37488817656,\"eur_24h_change\":1.967744278806767,\"last_updated_at\":1707395725}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=binance-peg-dogecoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "Ow-_iI0Bc9jUxdxFljus",
+        "_score": 1.0,
+        "_source": {
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          },
+          "@timestamp": "2024-02-08T12:44:33.728132100Z",
+          "@version": "1",
+          "tags": [
+            "ethereum"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "ethereum": {
+            "eur_24h_vol": 10382204074.42164,
+            "eur_market_cap": 270241893121.23074,
+            "eur": 2248.48,
+            "last_updated_at": 1707395892,
+            "eur_24h_change": 2.27396015697092
+          },
+          "event": {
+            "original": "{\"ethereum\":{\"eur\":2248.48,\"eur_market_cap\":270241893121.23074,\"eur_24h_vol\":10382204074.42164,\"eur_24h_change\":2.27396015697092,\"last_updated_at\":1707395892}}"
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "PA-_iI0Bc9jUxdxFlzsN",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:44:33.830564300Z",
+          "binancecoin": {
+            "eur_24h_vol": 917765842.235136,
+            "eur_market_cap": 45230436072.471565,
+            "eur": 293.85,
+            "last_updated_at": 1707395972,
+            "eur_24h_change": 4.50458038969967
+          },
+          "@version": "1",
+          "tags": [
+            "binancecoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "event": {
+            "original": "{\"binancecoin\":{\"eur\":293.85,\"eur_market_cap\":45230436072.471565,\"eur_24h_vol\":917765842.235136,\"eur_24h_change\":4.50458038969967,\"last_updated_at\":1707395972}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      },
+      {
+        "_index": "bitcoin-price",
+        "_id": "OA--iI0Bc9jUxdxFrDt5",
+        "_score": 1.0,
+        "_source": {
+          "@timestamp": "2024-02-08T12:43:33.778712600Z",
+          "bitcoin": {
+            "eur_24h_vol": 24360742298.716045,
+            "eur_market_cap": 815622160226.6355,
+            "eur": 41515,
+            "last_updated_at": 1707396021,
+            "eur_24h_change": 4.026099270119193
+          },
+          "@version": "1",
+          "tags": [
+            "bitcoin"
+          ],
+          "host": {
+            "name": "f4e3ffc05dab"
+          },
+          "event": {
+            "original": "{\"bitcoin\":{\"eur\":41515,\"eur_market_cap\":815622160226.6355,\"eur_24h_vol\":24360742298.716045,\"eur_24h_change\":4.026099270119193,\"last_updated_at\":1707396021}}"
+          },
+          "process": {
+            "command_line": "curl -X GET \"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true\"",
+            "exit_code": 0
+          }
+        }
+      }
+    ]
+  }
+}

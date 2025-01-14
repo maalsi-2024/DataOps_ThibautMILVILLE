@@ -1,0 +1,58 @@
+name: Shell commands
+
+permissions:
+  contents: write
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+
+      - name: Check actor
+        run: |
+          if [ "${{ github.actor }}" = "github-actions[bot]" ]; then
+            echo "Workflow triggered by actions@github.com. Exiting..."
+            exit 1
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Echo a string
+        run: echo "Hello World"
+
+      - name: Multiline script
+        run: |
+          echo "repo: " ${{github.repository}}
+          python3 -V
+
+      - name: Install dependencies
+        run: |
+          pip install pandas
+
+      - name: Run Python script
+        run: |
+          python3 biblio.py
+          ls -l
+      
+      - name: Run Python script
+        run: |
+          python3 parite.py
+      
+      - name: Write output file
+        run: |
+          mv magasin.csv ./output/output.csv
+          git config --local user.name "GitHub Actions Bot"
+          git config --local user.email "actions@github.com"
+          git add . && git commit -m "Write output/output.csv" && git push
