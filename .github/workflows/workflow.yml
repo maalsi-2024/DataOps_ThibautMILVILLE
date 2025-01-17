@@ -1,8 +1,6 @@
 name: Weather Data Analysis
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
